@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#114CB0"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <EditText
+        android:id="@+id/edtDT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="80"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine|textPersonName"
+        android:scrollbars="vertical"
+        android:text='"Digite seu texto aqui para começar"'
+        android:textColor="#020000"
+        android:textColorHighlight="#000000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOuvir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_lock_silent_mode_off"
+            android:text="Ouvir" />
+
+        <Button
+            android:id="@+id/btnSalvarDT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:text="Salvar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:drawableEnd="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="Sair" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

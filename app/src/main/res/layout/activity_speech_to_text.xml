@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#114CB0"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <EditText
+        android:id="@+id/edtSTT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine|textPersonName"
+        android:scrollbars="vertical"
+        android:text='"Seu texto aparecera aqui"             "Pressione o Botão do mic para Começar"'
+        android:textColor="#020000"
+        android:textColorHighlight="#000000" />
+
+    <ImageButton
+        android:id="@+id/btnGravar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="10"
+        android:backgroundTint="#114CB0"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="10"
+        android:drawableStart="@android:drawable/ic_menu_save"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btnSairSTT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:drawableEnd="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="Sair" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
